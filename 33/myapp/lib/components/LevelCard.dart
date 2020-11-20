@@ -15,8 +15,8 @@ class LevelCard extends StatelessWidget {
         elevation: 5.0,
         child: InkWell(
           onTap: () => {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => WordChoose()))
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => WordChoose(level)))
           },
           child: Container(
             width: 300,
