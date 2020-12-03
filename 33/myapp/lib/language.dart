@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:myapp/level.dart';
+import 'package:flutter/material.dart';
 
 class LanguagePage extends StatefulWidget {
   @override
@@ -17,23 +17,16 @@ class _LanguagePageState extends State<LanguagePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(height: 100),
-            Text("SELECT YOUR LANGUAGE",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold)),
+            Text("SELECT YOUR LANGUAGE", style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold)),
             SizedBox(height: 120),
             Card(
               elevation: 5.0,
               color: Color(0xff5CA4A7),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30),
-                    topLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30),
-                    topRight: Radius.circular(30)),
+                    bottomLeft: Radius.circular(30), topLeft: Radius.circular(30), bottomRight: Radius.circular(30), topRight: Radius.circular(30)),
               ),
-              child: new InkWell(
+              child: InkWell(
                 child: Container(
                   width: 334,
                   height: 80,
@@ -44,9 +37,7 @@ class _LanguagePageState extends State<LanguagePage> {
                         // width: 50,
                         height: 80.0,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(30),
-                              topLeft: Radius.circular(30)),
+                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30), topLeft: Radius.circular(30)),
                           child: Image.asset(
                             // 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png',
                             'assets/vietnam.png',
@@ -57,11 +48,7 @@ class _LanguagePageState extends State<LanguagePage> {
                         ),
                       ),
                       SizedBox(width: 40),
-                      Text("VIETNAMESE",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold)),
+                      Text("VIETNAMESE", style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold)),
                     ],
                   ),
                 ),
@@ -79,10 +66,7 @@ class _LanguagePageState extends State<LanguagePage> {
               color: Color(0xff5CA4A7),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(30),
-                    topLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30),
-                    topRight: Radius.circular(30)),
+                    bottomLeft: Radius.circular(30), topLeft: Radius.circular(30), bottomRight: Radius.circular(30), topRight: Radius.circular(30)),
               ),
               child: new InkWell(
                 child: Container(
@@ -95,9 +79,7 @@ class _LanguagePageState extends State<LanguagePage> {
                         // width: 100.0,
                         height: 80.0,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(30),
-                              topLeft: Radius.circular(30)),
+                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30), topLeft: Radius.circular(30)),
                           child: Image.asset(
                             // 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg/1200px-Flag_of_Great_Britain_%281707%E2%80%931800%29.svg.png',
                             'assets/england.png',
@@ -108,11 +90,7 @@ class _LanguagePageState extends State<LanguagePage> {
                         ),
                       ),
                       SizedBox(width: 40),
-                      Text("ENGLISH",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold)),
+                      Text("ENGLISH", style: TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold)),
                     ],
                   ),
                 ),
